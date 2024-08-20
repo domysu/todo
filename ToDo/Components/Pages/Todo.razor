@@ -2,10 +2,29 @@
 
 <h3>Todo</h3>
 
+<div class="form-group">
+    <label>What do u need to do</label>
+    <input @bind="InputValue" type="text"  class="form-control" placeholder="Enter text">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary mt-3" type="button">Add</button>
+    </div>
+</div>
 
-This is a todo page
+
+<div class="container mt-3 shadow-sm">
+
+
+    
+</div>
+
+
 
 @code {
 
+    private string? InputValue { get; set; }
+
+
+
+
+
 }
-g
