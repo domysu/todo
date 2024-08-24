@@ -1,31 +1,48 @@
-﻿@page "/todo"
+﻿@using ToDo.Models;
+@page "/todo"
+@rendermode InteractiveServer
 
 <h3>Todo</h3>
 
-<div class="form-group">
-    <label>What do u need to do</label>
-    <input @bind="InputValue" type="text"  class="form-control" placeholder="Enter text">
-    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <button class="btn btn-primary mt-3" type="button">Add</button>
-    </div>
-</div>
+<EditForm Model="@newTodo" OnValidSubmit="HandleValidSubmit" FormName="AddTodo">
 
-@for(int i = 1; i <= 2; i++){
-    
-<div class=" row mt-3 shadow-sm ">
-    <div class="col">hi</div>
-    <div class="col"><button class="btn btn-primary">Delete</button></div>
+
+    <div class="form-group">
+        <label for="todo">What you need to do?</label>
+        <InputText id="todotext" class="form-control" @bind-Value="newTodo.TodoText"  required />
+    </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button type="submit" class="btn btn-primary mt-3">Add</button>
+    </div>
+</EditForm>
+
+@foreach(var todolist in TodoList)
+    {
+<div class="row mt-3 shadow-sm " >
+    <div class="col-auto"> @todolist.Id</div>
+    <div class="col-auto d-flex justify-content-center">@todolist.TodoText</div>
+    <div class="col d-flex justify-content-end"><button class="btn btn-primary" @onclick="() => DeleteItem(todolist)">Delete</button></div>
   
 </div>
 }
 
 
 @code {
-    private List<int> TodoList = new List<int> { }; 
+    private List<TodoModel> TodoList = new List<TodoModel> { };
+    private TodoModel newTodo = new TodoModel();
     private string? InputValue { get; set; }
 
-        
 
+    public async Task HandleValidSubmit()
+    {
+        TodoList.Add(newTodo);
+        newTodo = new TodoModel();
+    }
+
+    private async Task DeleteItem(TodoModel todoItem)
+    {
+        TodoList.Remove(todoItem);
+    }
 
 
 }
