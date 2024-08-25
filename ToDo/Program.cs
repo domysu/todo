@@ -1,5 +1,19 @@
 using ToDo.Components;
+using MongoDB.Driver;
+using MongoDB.Bson;
 
+
+MongoClient client = new MongoClient("mongodb+srv://dominykasvozgirdas:POFPoJVrJnzaYfHM@yessir.mpp1f.mongodb.net/?retryWrites=true&w=majority&appName=YesSir");
+
+List<string> databases = client.ListDatabaseNames().ToList();
+
+foreach (string database in databases)
+{
+    Console.WriteLine(database);
+}
+
+
+// POFPoJVrJnzaYfHM
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
