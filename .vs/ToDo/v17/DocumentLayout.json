@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7024A999-519B-4455-8B7E-F441BE6583EB}|ToDo\\ToDo.csproj|c:\\users\\dasav\\desktop\\programming\\c#\\todo\\todo\\todo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7024A999-519B-4455-8B7E-F441BE6583EB}|ToDo\\ToDo.csproj|solutionrelative:todo\\todo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7024A999-519B-4455-8B7E-F441BE6583EB}|ToDo\\ToDo.csproj|c:\\users\\dasav\\desktop\\programming\\c#\\todo\\todo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7024A999-519B-4455-8B7E-F441BE6583EB}|ToDo\\ToDo.csproj|solutionrelative:todo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dasav\\AppData\\Local\\SourceServer\\e2b0a5de248bbc3b91634c06274fe47f10870138f24a5bd6330253291c473702\\ToDo\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7024A999-519B-4455-8B7E-F441BE6583EB}|ToDo\\ToDo.csproj|c:\\users\\dasav\\desktop\\programming\\c#\\todo\\todo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7024A999-519B-4455-8B7E-F441BE6583EB}|ToDo\\ToDo.csproj|solutionrelative:todo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7024A999-519B-4455-8B7E-F441BE6583EB}|ToDo\\ToDo.csproj|c:\\users\\dasav\\desktop\\programming\\c#\\todo\\todo\\todo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7024A999-519B-4455-8B7E-F441BE6583EB}|ToDo\\ToDo.csproj|solutionrelative:todo\\todo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dasav\\AppData\\Local\\SourceServer\\e2b0a5de248bbc3b91634c06274fe47f10870138f24a5bd6330253291c473702\\ToDo\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7024A999-519B-4455-8B7E-F441BE6583EB}|ToDo\\ToDo.csproj|c:\\users\\dasav\\desktop\\programming\\c#\\todo\\todo\\models\\todomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,7 +37,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Todo.razor",
               "DocumentMoniker": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\Components\\Pages\\Todo.razor",
               "RelativeDocumentMoniker": "ToDo\\Components\\Pages\\Todo.razor",
@@ -42,12 +46,11 @@
               "ViewState": "AQIAABIAAAAAAAAAAIBJwB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-20T17:00:51.578Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TodoModel.cs",
               "DocumentMoniker": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\Models\\TodoModel.cs",
               "RelativeDocumentMoniker": "ToDo\\Models\\TodoModel.cs",
@@ -56,12 +59,24 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T07:23:53.409Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\appsettings.json",
+              "RelativeDocumentMoniker": "ToDo\\appsettings.json",
+              "ToolTip": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\appsettings.json",
+              "RelativeToolTip": "ToDo\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-26T18:30:56.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dasav\\AppData\\Local\\SourceServer\\e2b0a5de248bbc3b91634c06274fe47f10870138f24a5bd6330253291c473702\\ToDo\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\e2b0a5de248bbc3b91634c06274fe47f10870138f24a5bd6330253291c473702\\ToDo\\Program.cs",
@@ -74,8 +89,8 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ToDo",
+              "DocumentIndex": 0,
+              "Title": "ToDo.csproj",
               "DocumentMoniker": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\ToDo.csproj",
               "RelativeDocumentMoniker": "ToDo\\ToDo.csproj",
               "ToolTip": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\ToDo.csproj",
@@ -87,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\Program.cs",
               "RelativeDocumentMoniker": "ToDo\\Program.cs",
