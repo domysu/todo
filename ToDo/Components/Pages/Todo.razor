@@ -1,4 +1,8 @@
-﻿@using ToDo.Models;
+﻿@using MongoDB.Bson;
+
+@using ToDo.Models;
+@using ToDo.Services;
+@inject TodoService TodoService
 @page "/todo"
 @rendermode InteractiveServer
 
@@ -31,10 +35,15 @@
     private TodoModel newTodo = new TodoModel();
     int nextId = 1;
 
+    protected override async Task OnInitializedAsync()
+    {
+        TodoList = await TodoService.GetTodoList();
+
+    }
 
     public async Task HandleValidSubmit()
     {
-        newTodo.Id = nextId;
+        newTodo.TodoId = nextId;
         nextId++;
         TodoList.Add(newTodo);
         newTodo = new TodoModel();

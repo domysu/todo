@@ -1,8 +1,12 @@
-﻿namespace ToDo.Models
+﻿using MongoDB.Bson;
+
+namespace ToDo.Models
 {
     public class TodoModel
     {
-        public int Id { get; set; }
+
+        public ObjectId Id { get; set; }
+        public int TodoId { get; set; }
         public string? TodoText { get; set; }
   
     }
