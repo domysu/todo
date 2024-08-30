@@ -33,27 +33,30 @@
 @code {
     private List<TodoModel> TodoList = new List<TodoModel> { };
     private TodoModel newTodo = new TodoModel();
-    int nextId = 1;
 
     protected override async Task OnInitializedAsync()
     {
-        TodoList = await TodoService.GetTodoList();
+        TodoList = await TodoService.GetTodoListAsync();
+
 
     }
 
     public async Task HandleValidSubmit()
     {
-        newTodo.TodoId = nextId;
-        nextId++;
-        TodoList.Add(newTodo);
+
+        await TodoService.AddItemAsync(newTodo);
         newTodo = new TodoModel();
+
+        TodoList = await TodoService.GetTodoListAsync(); // Refreshing the UI
+
+
     }
 
     private async Task DeleteItem(TodoModel todoItem)
     {
-        nextId--;
-        TodoList.Remove(todoItem);
-        
+        await TodoService.RemoveItemAsync(todoItem);
+
+        TodoList = await TodoService.GetTodoListAsync();
     }
 
 

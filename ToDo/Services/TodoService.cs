@@ -28,13 +28,25 @@ namespace ToDo.Services
 
         }
 
-            public async Task<List<TodoModel>> GetTodoList()
-            {
-            var filter = Builders<TodoModel>.Filter.Empty;
-            var result = await _collection.Find(filter).ToListAsync();
-
-            return result;
-            }
+        public async Task<List<TodoModel>> GetTodoListAsync()
+        {
+         var filter = Builders<TodoModel>.Filter.Empty;
+         var result = await _collection.Find(filter).ToListAsync();
+         return result;
+        }
+        
+        public async Task AddItemAsync(TodoModel item)
+        {
+            
+             await _collection.InsertOneAsync(item);
+             
+        }
+        
+        public async Task RemoveItemAsync(TodoModel item)
+        {
+            var filter = Builders<TodoModel>.Filter.Eq(t => t.Id,item.Id);
+            await _collection.DeleteOneAsync(filter);
+        }
 
     }
 }
