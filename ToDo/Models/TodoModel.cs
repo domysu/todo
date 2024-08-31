@@ -6,7 +6,7 @@ namespace ToDo.Models
     {
 
         public ObjectId Id { get; set; }
-        public int TodoId { get; set; }
+        public int TodoId { get; set; }s
         public string? TodoText { get; set; }
   
     }
