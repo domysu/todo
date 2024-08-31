@@ -42,33 +42,37 @@
 
 
     }
-
+    public async Task RefreshUI()
+    {
+        TodoList = await TodoService.GetTodoListAsync();
+    }
     public async Task HandleValidSubmit()
     {
 
         await TodoService.AddItemAsync(newTodo);
         newTodo = new TodoModel();
 
-        TodoList = await TodoService.GetTodoListAsync(); // Refreshing the UI
-
+        await RefreshUI();
 
     }
+
+
 
     private async Task DeleteItem(TodoModel todoItem)
     {
         await TodoService.RemoveItemAsync(todoItem);
 
-        TodoList = await TodoService.GetTodoListAsync();
+        await RefreshUI();
     }
 
     private async Task DeleteAll()
     {
 
+
         
         await TodoService.DeleteAll();
 
-        TodoList = await TodoService.GetTodoListAsync();
-
+        await RefreshUI();
     }
 
 
