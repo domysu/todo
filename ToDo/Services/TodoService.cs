@@ -48,5 +48,13 @@ namespace ToDo.Services
             await _collection.DeleteOneAsync(filter);
         }
 
+        public async Task DeleteAll()
+        {
+            var filter = Builders<TodoModel>.Filter.Empty;
+            await _collection.DeleteManyAsync(filter);
+           
+
+        }
+
     }
 }
