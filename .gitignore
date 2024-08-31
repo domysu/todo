@@ -2,7 +2,13 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+<<<<<<< HEAD
 /.vs/ToDo/FileContentIndex
 /ToDo/obj/Debug/net8.0/ToDo.AssemblyInfo.cs
 /ToDo/obj/Debug/net8.0/ToDo.AssemblyInfoInputs.cache
+=======
+/.vs/todo/FileContentIndex
+/.vs/todo
+/ToDo/bin/Debug/net8.0
+>>>>>>> 88a91563380b182c4ae1730dba043187824eb7db
 /ToDo/obj/Debug/net8.0
