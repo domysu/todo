@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qZoA+xdUHwAjRlnN80qldS/zakAgFl7xKx+03LuFml4=",
+  "Hash": "SJ3ioMhB/zJIbRPXuW9LSNwcFeQz/A0n4D53Vv0wrtY=",
   "Source": "ToDo",
   "BasePath": "_content/ToDo",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ToDo\\wwwroot",
       "Source": "ToDo",
-      "ContentRoot": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ToDo.styles.css",
+      "Identity": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ToDo.styles.css",
       "SourceId": "ToDo",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "ToDo.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ToDo.styles.css"
+      "OriginalItemSpec": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ToDo.styles.css"
     },
     {
-      "Identity": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ToDo.bundle.scp.css",
+      "Identity": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ToDo.bundle.scp.css",
       "SourceId": "ToDo",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "ToDo.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ToDo.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ToDo.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\wwwroot\\app.css",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\wwwroot\\favicon.png",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

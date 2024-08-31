@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c/7bEi74hOM=",
+  "dgSpecHash": "CDqjI+XuP/A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dasav\\Desktop\\Programming\\C#\\ToDo\\ToDo\\ToDo.csproj",
+  "projectFilePath": "C:\\Users\\dasav\\Source\\Repos\\todo\\ToDo\\ToDo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dasav\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\dasav\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
