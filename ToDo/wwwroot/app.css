@@ -1,7 +1,20 @@
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+     
 a, .btn-link {
     color: #006bb7;
 }
@@ -48,4 +61,31 @@ h1:focus {
 
 .darker-border-checkbox.form-check-input {
     border-color: #929292;
+}
+
+
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+    transition: 0.2s;
+    border: 1px;
+    border-radius: 5px;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:hover{
+    background: #C5C6D0;   
+    
+
+}
+
+ul li.checked{
+    text-decoration: line-through !important;
+
 }

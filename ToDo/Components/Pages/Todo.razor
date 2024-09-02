@@ -20,15 +20,14 @@
     </div>
 </EditForm>
 
-<button type="button" class="btn btn-danger" @onclick="() => DeleteAll()">Clear List</button>
+<button type="button" class="btn btn-danger mb-1" @onclick="() => DeleteAll()">Clear List</button>
 
 @foreach(var todolist in TodoList)
     {
-<div class="row mt-3 shadow-sm " >
-    <div class="col-auto d-flex justify-content-center">@todolist.TodoText</div>
-    <div class="col d-flex justify-content-end"><button class="btn btn-danger" @onclick="() => DeleteItem(todolist)">Delete</button></div>
-  
-</div>
+<ul>
+    <li class="checked">@todolist.TodoText</li>
+
+</ul>
 }
 
 
