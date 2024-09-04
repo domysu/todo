@@ -55,6 +55,15 @@ namespace ToDo.Services
            
 
         }
+        public async Task UpdateItemAsync(TodoModel item)
+        {
+
+            var filter = Builders<TodoModel>.Filter.Eq(t=>t.Id,item.Id);
+            var update = Builders<TodoModel>.Update
+                .Set(t => t.TodoText, item.TodoText)
+                .Set(t => t.IsChecked, item.IsChecked);
+            await _collection.UpdateOneAsync(filter, update);
+        }
 
     }
 }

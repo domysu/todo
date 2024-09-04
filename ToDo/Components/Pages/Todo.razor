@@ -78,7 +78,12 @@
 
     private async Task ToggleItem(TodoModel todoItem)
     {
-         todoItem.IsChecked = !todoItem.IsChecked;
+        todoItem.IsChecked = !todoItem.IsChecked;
+
+        await TodoService.UpdateItemAsync(todoItem);
+
+        await RefreshUI();
+
     }
 
     private string CheckForToggle(TodoModel todoItem)
