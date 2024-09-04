@@ -25,7 +25,7 @@
 @foreach(var todolist in TodoList)
     {
 <ul>
-    <li class="checked">@todolist.TodoText</li>
+    <li class=@CheckForToggle(todolist) @onclick="()=>ToggleItem(todolist)" >@todolist.TodoText</li>
 
 </ul>
 }
@@ -68,10 +68,27 @@
     {
 
 
-        
+
         await TodoService.DeleteAll();
 
         await RefreshUI();
+    }
+
+
+
+    private async Task ToggleItem(TodoModel todoItem)
+    {
+         todoItem.IsChecked = !todoItem.IsChecked;
+    }
+
+    private string CheckForToggle(TodoModel todoItem)
+    {
+        if (todoItem.IsChecked == true)
+        {
+            return "checked";
+        }
+        else
+            return "";
     }
 
 
