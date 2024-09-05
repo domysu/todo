@@ -87,5 +87,7 @@ ul li:hover{
 
 ul li.checked{
     text-decoration: line-through;
+    color: green;
+    transition: 2s;
 
 }
