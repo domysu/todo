@@ -22,11 +22,13 @@
 <button type="button" class="btn btn-danger mb-1" @onclick="() => DeleteAll()">Clear List</button>
 
 @foreach(var todolist in TodoList)
-    {
+ {
+     <div class="close-button-container">
 <ul>
     <li class=@CheckForToggle(todolist) @onclick="()=>ToggleItem(todolist)" >@todolist.TodoText</li>
-
 </ul>
+    <button class="btn btn-close" @onclick="()=>DeleteItem(todolist)"></button>
+    </div>
 }
 
 
