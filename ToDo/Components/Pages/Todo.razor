@@ -1,5 +1,5 @@
 ﻿@using MongoDB.Bson;
-
+@using ToDo.Components;
 @using ToDo.Models;
 @using ToDo.Services;
 @inject TodoService TodoService
@@ -17,6 +17,7 @@
     </div>
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <button type="submit" class="btn btn-primary mt-3">Add</button>
+        <button class="btn btn-outline-warning mt-3" @onclick="() => Modal.Open()">Open Modal</button>
     </div>
 </EditForm>
 <button type="button" class="btn btn-danger mb-1" @onclick="() => DeleteAll()">Clear List</button>
@@ -31,11 +32,14 @@
     </div>
 }
 
+<Modal @ref="Modal"></Modal>
+
+
 
 @code {
     private List<TodoModel> TodoList = new List<TodoModel> { };
     private TodoModel newTodo = new TodoModel();
-
+    private Modal Modal { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
