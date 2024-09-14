@@ -10,6 +10,7 @@ namespace ToDo.Models
 
         public bool IsChecked { get; set; }
 
+        public bool IsPinned { get; set; } = false;
         
     }
 }

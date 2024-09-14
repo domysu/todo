@@ -61,9 +61,12 @@ namespace ToDo.Services
             var filter = Builders<TodoModel>.Filter.Eq(t=>t.Id,item.Id);
             var update = Builders<TodoModel>.Update
                 .Set(t => t.TodoText, item.TodoText)
-                .Set(t => t.IsChecked, item.IsChecked);
+                .Set(t => t.IsChecked, item.IsChecked)
+                .Set(t => t.IsPinned, item.IsPinned);
             await _collection.UpdateOneAsync(filter, update);
         }
+        
+        
 
     }
 }
