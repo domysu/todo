@@ -31,7 +31,9 @@ namespace ToDo.Services
         public async Task<List<TodoModel>> GetTodoListAsync()
         {
          var filter = Builders<TodoModel>.Filter.Empty;
-         var result = await _collection.Find(filter).ToListAsync();
+         var result = await _collection.Find(filter)
+                .Sort(Builders<TodoModel>.Sort.Descending("IsPinned"))
+                .ToListAsync();
          return result;
         }
         
@@ -66,6 +68,8 @@ namespace ToDo.Services
             await _collection.UpdateOneAsync(filter, update);
         }
         
+      
+      
         
 
     }
