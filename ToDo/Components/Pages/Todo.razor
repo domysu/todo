@@ -24,11 +24,15 @@
 
 @foreach(var todolist in TodoList)
  {
-     <div class="close-button-container">
+     <div class="item-container">
 <ul>
     <li class=@CheckForToggle(todolist) @onclick="()=>ToggleItem(todolist)" >@todolist.TodoText</li>
 </ul>
+    <div class="close-button-container">
+
+     <button class="btn btn"><i class="fa-solid fa-thumbtack"></i></button>
     <button class="btn btn-close" @onclick="()=>DeleteItem(todolist)"></button>
+    </div>
     </div>
 }
 

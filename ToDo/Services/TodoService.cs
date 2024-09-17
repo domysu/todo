@@ -12,8 +12,8 @@ namespace ToDo.Services
 
         public TodoService() 
         {
-
-            var connectionString = Environment.GetEnvironmentVariable("MONGODB_URI");
+            
+            var connectionString = Environment.GetEnvironmentVariable("MONGODB_URI"); // Check link below for setting this up
             if (connectionString == null)
             {
                 Console.WriteLine("Connection string is not set up properly, https://www.mongodb.com/docs/drivers/csharp/current/quick-start/#std-label-csharp-quickstart");
@@ -32,7 +32,7 @@ namespace ToDo.Services
         {
          var filter = Builders<TodoModel>.Filter.Empty;
          var result = await _collection.Find(filter)
-                .Sort(Builders<TodoModel>.Sort.Descending("IsPinned"))
+                .Sort(Builders<TodoModel>.Sort.Descending("IsPinned")) // Pinning logic, if pinned its on top of list
                 .ToListAsync();
          return result;
         }

@@ -91,10 +91,22 @@ ul li.checked{
     transition: 0.2s;
 
 }
-.close-button-container{
+.item-container{
     display:flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
 
 }
+.item-container ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.close-button-container {
+  
+    display: flex;
+    gap: 10px; 
+}
+
