@@ -30,7 +30,7 @@
 </ul>
     <div class="close-button-container">
 
-     <button class="btn btn"><i class="fa-solid fa-thumbtack"></i></button>
+     <button class="btn btn-light" class="" @onclick="()=>PinItem(todolist)"><i class="fa-solid fa-thumbtack"></i></button>
     <button class="btn btn-close" @onclick="()=>DeleteItem(todolist)"></button>
     </div>
     </div>
@@ -91,7 +91,6 @@
         todoItem.IsChecked = !todoItem.IsChecked;
 
         await TodoService.UpdateItemAsync(todoItem);
-
         await RefreshUI();
 
     }
@@ -108,7 +107,17 @@
 
 
     }
-  
+    private async Task PinItem(TodoModel todoItem)
+    {
+
+        todoItem.IsPinned = !todoItem.IsPinned;
+
+
+        await TodoService.UpdateItemAsync(todoItem);
+        await RefreshUI();
+
+    }
+
 
 
 

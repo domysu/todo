@@ -72,6 +72,7 @@ ul li{
     transition: 0.2s;
     border: 1px;
     border-radius: 5px;
+
     list-style-type: none;
     -webkit-user-select: none;
     -moz-user-select: none;
