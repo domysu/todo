@@ -95,26 +95,7 @@
 
     }
 
-    private string CheckForToggle(TodoModel todoItem)
-    {
-        if (todoItem.IsChecked == true)
-        {
-            return "checked";
-        }
-        else
-            return "";
-
-
-
-    }
-    private string CheckForPin(TodoModel todoItem)
-    {
-        if (todoItem.IsPinned)
-        {
-            return "fa-solid fa-thumbtack-slash";
-        }
-        else return "fa-solid fa-thumbtack";
-    }
+ 
     private async Task PinItem(TodoModel todoItem)
     {
 
@@ -126,6 +107,14 @@
 
     }
 
+    private string CheckForToggle(TodoModel todoItem)
+    {
+        return todoItem.IsChecked ? "checked" : "";
+    }
+    private string CheckForPin(TodoModel todoItem)
+    {
+        return todoItem.IsPinned ? "fa-solid fa-thumbtack-slash" : "fa-solid fa-thumbtack";
+    }
 
 
 
