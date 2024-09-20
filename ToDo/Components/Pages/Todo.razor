@@ -25,14 +25,14 @@
 @foreach(var todolist in TodoList)
  {
      <div class="item-container">
-<ul>
-    <li class=@CheckForToggle(todolist) @onclick="()=>ToggleItem(todolist)" >@todolist.TodoText</li>
-</ul>
-    <div class="close-button-container">
+    <ul>
+     <li class=@CheckForToggle(todolist) @onclick="()=>ToggleItem(todolist)">@todolist.TodoText</li>
+    </ul>
+        <div class="close-button-container">
 
-     <button class="btn btn-light" class="" @onclick="()=>PinItem(todolist)"><i class="fa-solid fa-thumbtack"></i></button>
-    <button class="btn btn-close" @onclick="()=>DeleteItem(todolist)"></button>
-    </div>
+            <button class="btn btn-light" @onclick="()=>PinItem(todolist)"><i class=@CheckForPin(todolist)></i></button>
+            <button class="btn btn-close" @onclick="()=>DeleteItem(todolist)"></button>
+        </div>
     </div>
 }
 
@@ -106,6 +106,14 @@
 
 
 
+    }
+    private string CheckForPin(TodoModel todoItem)
+    {
+        if (todoItem.IsPinned)
+        {
+            return "fa-solid fa-thumbtack-slash";
+        }
+        else return "fa-solid fa-thumbtack";
     }
     private async Task PinItem(TodoModel todoItem)
     {
