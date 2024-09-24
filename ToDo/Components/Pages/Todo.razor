@@ -28,7 +28,7 @@
     <ul>
      <li class=@CheckForToggle(todolist) @onclick="()=>ToggleItem(todolist)">@todolist.TodoText</li>
     </ul>
-        <div class="close-button-container">
+        <div class="button-container">
 
             <button class="btn btn-light" @onclick="()=>PinItem(todolist)"><i class=@CheckForPin(todolist)></i></button>
             <button class="btn btn-close" @onclick="()=>DeleteItem(todolist)"></button>
@@ -36,14 +36,14 @@
     </div>
 }
 
-<Modal @ref="Modal"></Modal>
+<Modal @ref="Modal" OnTodoAdded="RefreshUI"></Modal>
 
 
 
 @code {
     private List<TodoModel> TodoList = new List<TodoModel> { };
     private TodoModel newTodo = new TodoModel();
-    private Modal Modal { get; set; }
+    private Modal Modal { get; set; } // For the pop up
 
     protected override async Task OnInitializedAsync()
     {

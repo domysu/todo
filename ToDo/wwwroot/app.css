@@ -105,7 +105,7 @@ ul li.checked{
     list-style: none;
 
 }
-.close-button-container {
+.button-container {
   
     display: flex;
     gap: 10px; 

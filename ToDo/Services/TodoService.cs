@@ -32,7 +32,7 @@ namespace ToDo.Services
         {
          var filter = Builders<TodoModel>.Filter.Empty;
          var result = await _collection.Find(filter)
-                .Sort(Builders<TodoModel>.Sort.Descending("IsPinned")) // Pinning logic, if pinned its on top of list
+                .Sort(Builders<TodoModel>.Sort.Descending("IsPinned")) // Pinning logic, if pinned its on top of the list
                 .ToListAsync();
          return result;
         }
