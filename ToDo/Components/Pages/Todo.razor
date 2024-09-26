@@ -20,7 +20,7 @@
         <button class="btn btn-outline-warning mt-3" @onclick="() => Modal.Open()">Open Modal</button>
     </div>
 </EditForm>
-<button type="button" class="btn btn-danger mb-1" @onclick="() => DeleteAll()">Clear List</button>
+<button type="button" class="btn btn-danger mb-1" @onclick="() => DeleteVerify.Open()">Clear List</button>
 
 @foreach(var todolist in TodoList)
  {
@@ -35,7 +35,7 @@
         </div>
     </div>
 }
-
+<DeleteVerify @ref="DeleteVerify"></DeleteVerify>
 <Modal @ref="Modal" OnTodoAdded="RefreshUI"></Modal>
 
 
@@ -44,6 +44,7 @@
     private List<TodoModel> TodoList = new List<TodoModel> { };
     private TodoModel newTodo = new TodoModel();
     private Modal Modal { get; set; } // For the pop up
+    private DeleteVerify DeleteVerify { get; set; }
 
     protected override async Task OnInitializedAsync()
     {

@@ -7,7 +7,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Components\Pages\DeleteVerify.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.28.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Components\DeleteVerify.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Components\DeleteVerify.razor" />
+    <_ContentIncludedByDefault Remove="Components\Pages\DeleteVerify.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Components\Pages\DeleteVerify.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Components\Pages\DeleteVerify.razor" />
   </ItemGroup>
 
 </Project>
